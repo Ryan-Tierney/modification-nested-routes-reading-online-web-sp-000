@@ -4313,3 +4313,14 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 46ms (Views: 25.8ms | ActiveRecord: 1.6ms)
 
 
+Started POST "/posts" for 173.18.197.157 at 2020-08-01 17:46:54 +0000
+Cannot render console from 173.18.197.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"amEh7FymKDZvmDH3j8NE+Ct2+aiaa4Vr9YQ+DaXJBdcyXMnh+YDfNn3Sl9nUnyPQ6gH3sBM37B6Z12Gp2AMSzw==", "post"=>{"author_id"=>"4", "title"=>"new", "description"=>"newwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at", "author_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "New"], ["description", "newwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"], ["created_at", "2020-08-01 17:46:54.157740"], ["updated_at", "2020-08-01 17:46:54.157740"], ["author_id", 4]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://159.89.235.135:60166/posts/18
+Completed 302 Found in 14ms (ActiveRecord: 9.4ms)
+
+
