@@ -17,7 +17,7 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new
+    @post = Post.new(author_id: params[:author_id])
   end
 
   def create
@@ -33,7 +33,7 @@ class PostsController < ApplicationController
   end
 
   def edit
-    @post = Post.find(params[:id])
+    @post = Post.find(params[:author_id] params[:author_id])
   end
 
   private
